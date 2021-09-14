@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.startBtn,
+.infoCard,
+.gameCard {
+  position: absolute;
+}
+
+.startBtn,
+.infoCard,
+.gameCard,
+.gameCard .card-footer {
+  display: none;
+  opacity: 0;
+}
+
+.infoCard-header {
+  animation: bouncing 1s infinite;
+}
+
+.board {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightgray;
+
+  div {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .board {
+    height: 300px;
+    width: 300px;
+    div {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.boom {
+  font-size: 120%;
+  background-color: red;
+}
+
+.flaged {
+  font-size: 120%;
+  // background-color: yellow;
+}
+
+.checked {
+  background-color: green;
+}
+
+.bombNumber {
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.7);
+  .circle-text {
+    font-size: 120%;
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
