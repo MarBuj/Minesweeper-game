@@ -1,3 +1,5 @@
+DEMO: https://marbuj.github.io/Minesweeper-game/
+
 Project of building a Minesweeper game in order to remember nostalgic times with Windows 98. This is how old I am. 
 
 The biggest challenge - Javascript Recursive functions. The main goal - understanding its basis.
